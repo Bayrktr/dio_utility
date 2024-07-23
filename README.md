@@ -1,14 +1,11 @@
-For example:
+### For example
 
-
-
+```dart
 abstract class IHomeRepository {
   Future<CategoryModel?> getCategory();
-
 }
 
 class HomeRepository with DioUtility implements IHomeRepository {
-
   @override
   Future<CategoryModel?> getCategory() async {
     final response = await fetchSingleData(
@@ -18,8 +15,5 @@ class HomeRepository with DioUtility implements IHomeRepository {
     );
     return response;
   }
- ....
-
-
 }
-
+```
